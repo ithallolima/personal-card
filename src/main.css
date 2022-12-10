@@ -1,0 +1,36 @@
+:root {
+  --bg-color: var(--palette-05);
+  --text-color: #373737;
+
+  --palette-01: hsl(0, 0%, 22%);
+  --palette-02: hsl(194, 38%, 82%);
+  --palette-03: hsl(120, 63%, 50%);
+  --palette-04: hsl(56, 82%, 51%);
+  --palette-05: hsl(240, 71%, 49%);
+
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  cursor: default;
+}
+
+body {
+  font-size: 1.6rem;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: 'Archivo', sans-serif;
+}
+
+a {
+  color: var(--text-color);
+  border-bottom: .2rem solid var(--text-color);
+  text-transform: uppercase;
+  cursor: pointer;
+}

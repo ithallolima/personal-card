@@ -1,0 +1,115 @@
+.card, section, .social-links, header, .infos {
+  display: flex;
+}
+
+.card {
+  flex-direction: column;
+  background-color: white;
+  border: .4rem solid black;
+  margin: 0;
+  width: 72rem;
+  box-shadow: 1.6rem 2.4rem 0 0 black;
+}
+
+header {
+  background-color: black;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  padding-inline:1.6rem;
+}
+
+header span {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+section, .social-links {
+  padding-inline:3.2rem;
+}
+
+section {
+  padding-block: 3.2rem;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.profile-image {
+  background-color: var(--palette-04);
+  width: 16rem;
+  height: 16rem;
+  display: grid;
+  place-items: center;
+  border: 1.2rem solid var(--palette-03);
+}
+
+.profile-image img {
+  width: 10.4rem;
+  height: 10.4rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.social-links {
+  border-top: .1rem solid black;
+  padding-block: 3.2rem;
+  align-items: center;
+  font-size: 1.4rem;
+  justify-content: space-between;
+  font-family: 'JetBrains Mono', monospace;
+  text-transform: uppercase;
+  
+  
+  background-color: #fff;
+  background-image:  linear-gradient(hsl(237, 15%, 15%, .15) .1rem, transparent .1rem), linear-gradient(to right, hsl(237, 15%, 15%, .15) .1rem, #fff .1rem);
+  background-size: 3.2rem 3.2rem;
+
+}
+
+.description {
+  width: min(40rem, 80%);
+}
+
+.infos {
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 75%;
+}
+
+.infos .name {
+  font-size: 2.4rem;
+}
+
+.infos .name .pronoum {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-left: .4rem;
+}
+
+.occupation {
+  font-weight: 700;
+}
+
+.description {
+  line-height: 130%;
+  opacity: .75;
+}
+
+.social {
+  display: flex;
+  gap: .8rem
+}
+
+.social a {
+  display: flex;
+  align-items: center;
+  gap: .4rem
+}
+
+.country {
+  font-family: 'Archivo', sans-serif;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
